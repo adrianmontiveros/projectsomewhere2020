@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somewhere</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,600,700&display=swap" rel="stylesheet">
+    <!--Title icon-->
+    <link rel="shortcut icon" href="somewhere-icon.png" type="image/x-icon">
+    <!--SoMe Icon Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    <header>
+
+        <nav class="top-nav-container">
+            <div id="logo">
+                <img id="logo" src="assets/logo/logolight-01.svg" height="80">
+            </div>
+            <div class="top-ul">
+                <ul class="top-nav-list">
+                    <li id="home"><a href="/">HOME</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Placed video in main-->
+    <main>
+        <div class="hero-video-container">
+            <div class="hero-video-video">
+                <video autoplay muted loop id="myVideo">
+                    <source src="assets/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-video-text">
+                <h3>Travel with a PURPOSE</h3>
+            </div>
+
+        </div>
+
+        <button id="apply-button">APPLY</button>
+
+
+
+    </main>
+
+
+    <div class="test">
+        <!--TEMPLATE CREATION        -->
+
+        <template class="template" id="destinationTemplate">
+            <article class="destination" id="destination">
+
+                <h4>Location</h4>
+                <div class="img">
+                    <img class="image" src="assets/img/1.jpg" />
+                </div>
+            </article>
+        </template>
+
+    </div>
+
+    <div id="box">
+        <div>
+            <h1>Let's plan your next steps</h1>
+        </div>
+        <div id="form">
+            <div class="form">
+                <h5>Where?</h5>
+                <div>
+                    <p><input id="check" type="checkbox"> Bali</p>
+                </div>
+                <div>
+                    <p><input id="check" type="checkbox"> Sri Lanka</p>
+                </div>
+                <div>
+                    <p><input id="check" type="checkbox"> Thailand</p>
+                </div>
+            </div>
+            <div class="form">
+                <h5>What?</h5>
+                <div>
+                    <p><input id="check" type="checkbox"> Photography</p>
+                    <p><input id="check" type="checkbox"> Videography</p>
+                    <p><input id="check" type="checkbox"> Web Design</p>
+                </div>
+            </div>
+            <div class="form">
+                <h5>When?</h5>
+                <label for="dateofbirth">From</label><br>
+                <input type="date" name="dateofbirth" id="dateofbirth"> <br> <br>
+                <label for="dateofbirth">To<br></label>
+                <input type="date" name="dateofbirth" id="dateofbirth">
+            </div>
+            <div class="form">
+                <h5>Who?</h5>
+                <label for="persons">Person/s</label><br>
+                <input type="number" id="number">
+            </div>
+        </div>
+
+        <div id="button"><button>Take me somewhere</button></div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <a href="..">Contact</a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="..">Privacy</a>
+        </div>
+        <div class="footer-logo">
+            <img src="assets/logo/logolight-01.svg" height="100"></div>
+
+        <div class="copyright">
+            2020 All rights reserved
+        </div>
+    </footer>
+
+    <div class="modal-background hide">
+        <div class="modal-content">
+
+            <h1 class="modal-name">Thailand</h1>
+            <div id="img-modal"><img src="assets/img/1.jpg" width="500" class="modal-image"></div>
+            <p class="modal-description"><strong>Friendly and food-obsessed, hedonistic and historic, cultured and curious, Thailand tempts visitors with a smile as golden as the country's glittering temples and tropical beaches</strong>
+                <br>
+                <br>
+                Beaches and nature
+                With a luxuriously long coastline and over 1400 jungle-topped islands anchored in azure waters, Thailand is a tropical getaway fit for everyone. The country's coast is one giant playground, with plenty going on wherever the sand meets the sea. You can snorkel the gentle waters off Ko Lipe, dive with whale sharks around Ko Tao, scale the sea cliffs of Krabi, kiteboard in Hua Hin, party on Ko Phi-Phi and recuperate at a health resort on Ko Samui. Outside the cluttered cities and towns lies Thailand's rural heartland, a mix of rice paddies, tropical forests and villages where life is dominated by the rhythms of the agricultural clock.
+                <br>
+                <br>
+                Culture
+                Gleaming temples and golden Buddhas frame both the rural and the urban landscape. Ancient banyan trees are ceremoniously wrapped in sacred cloth to honour the resident spirits, fortune-bringing shrines decorate humble homes as well as monumental malls.
+            </p>
+            <br>
+            <br>
+            <div class="modal-button">
+                <button id="modal-button-course"><a href="#locations">Find courses in </a><span>Thailand</span></button>
+            </div>
+            <!--
+            <h4>Courses available</h4>
+            <div id="modal-courses"><div id="course-modal"><h2>Photography</h2></div><div id="course-modal"><h2>Videography</h2></div><div id="course-modal"><h2>Webdesign</h2></div></div>
+-->
+
+            <h6 class="modal-price">DKK <span></span></h6>
+        </div>
+    </div>
+    <script src="script/js.js"></script>
+
+</body></html>
+
+<!--
+Video needs to be responsive - so when you scale the browser it doesn't get smaller (imo)
+
+sections need to be either showing 3 categories in a row(3 countries, 3 courses etc.) not 2 and then 1 below when scaling
+
+Headings (f.x. Somewhere in...) have to be on top of the grid (I just put it in a section to show how it should look)
+
+Color the navigationbar background when hovering (with opacity) when scrolling..
+
+One sie for all the images for frontpage, the images are to big now(we can only see top courner).
+
+Right position text on video
+
+-->
